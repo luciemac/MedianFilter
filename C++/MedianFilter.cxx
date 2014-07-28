@@ -10,15 +10,6 @@ int main(int argc, char *argv[])
 {
   PARSE_ARGS;
 
-  // Test number of arguments has to be 4
-  if(argc < 4)
-  {
-    std::cerr << "Incorrect command" << std::endl <<" Need : "<< std::endl ;
-    std::cerr <<argv[0]<< " inputImage outputImage -r radius" << std::endl ;
-
-    return EXIT_FAILURE ;
-  }
-
   // Test value of radius has to be positive and maximum 6
   if(radius_input < 0 || radius_input > 6)
   {
